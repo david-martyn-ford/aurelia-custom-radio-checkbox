@@ -1,9 +1,9 @@
 <template>
   <div repeat.for="radio of items" class="o-radio ${$parent.selected === radio.value ? 'o-radio--active' : ''}">
-    <label for="${radio.name}_${radio.value}">
+    <label class="o-radio__label" for="${radio.name}_${radio.value}">
       <div class="o-radio__box">
         <input type="radio" id="${radio.name}_${radio.value}" class="o-radio__input" name.bind="radio.name" value.bind="radio.value" checked.bind="$parent.selected"/>
-        <div class="o-radio__check" show="{$parent.selected === $radio.value ? true : false}"></div>
+        <div class="o-radio__check"></div>
       </div>
       ${radio.label}
     </label>

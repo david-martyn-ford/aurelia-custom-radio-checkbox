@@ -40,3 +40,9 @@
 .o-radio.o-radio--active .o-radio__check {
   display: block;
 }
+
+
+.o-radio__label {
+  vertical-align: top;
+  cursor: pointer;
+}
