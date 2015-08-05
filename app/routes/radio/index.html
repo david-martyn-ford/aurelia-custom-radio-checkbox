@@ -5,11 +5,13 @@
     <h1>Radio</h1>
     
     <form>
-      <h5>Radio Group 1</h5>
-      <radio-group items.bind="radioGroup1" selected="m"></radio-group>
+      <h4>Radio Group 1</h4>
+      <h5>Selected Value: <strong>${radioGroup1Selected}</strong></h5>
+      <radio-group items.bind="radioGroup1" selected.two-way="radioGroup1Selected"></radio-group>
       
-      <h5>Radio Group 2</h5>
-      <radio-group items.bind="radioGroup2" selected="2"></radio-group>
+      <h4>Radio Group 2</h4>
+      <h5>Selected Value: <strong>${radioGroup2Selected}</strong></h5>
+      <radio-group items.bind="radioGroup2" selected.two-way="radioGroup2Selected"></radio-group>
     </form>
   </div>
   
