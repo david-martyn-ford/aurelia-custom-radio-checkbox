@@ -1,0 +1,42 @@
+.o-radio {
+  position: relative;
+}
+
+.o-radio__box {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #f1f1f1;
+  border: solid 1px #ccc;
+  padding: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.o-radio.o-radio--active .o-radio__box {
+  border-color: #00a9e8;
+}
+
+.o-radio__input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.o-radio__check {
+  width: 100%;
+  height: 100%;
+  background: #00a9e8;
+  border-radius: 16px;
+  display: none;
+}
+
+.o-radio.o-radio--active .o-radio__check {
+  display: block;
+}
