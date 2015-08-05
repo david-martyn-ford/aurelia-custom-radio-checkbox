@@ -1,0 +1,43 @@
+.o-checkbox {
+  position: relative;
+}
+
+.o-checkbox__box {
+  width: 16px;
+  height: 16px;
+  background: #f1f1f1;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.o-checkbox__box.o-checkbox__box--checked {
+    border-color: #00a9e8;
+}
+
+.o-checkbox__input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.o-checkbox__check {
+  height: 100%;
+  width: 100%;
+  background: #00a9e8;
+  border-radius: 2px;
+}
+
+.o-checkbox__label {
+  vertical-align: top;
+  cursor: pointer;
+}

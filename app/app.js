@@ -5,7 +5,7 @@ export class App {
   configureRouter(config, router){
     config.title = 'Aurelia';
     config.map([
-      { route: ['','radio'], name: 'radio', moduleId: './radio', nav: true, title: 'Checkbox'}
+      { route: ['','radio'],  name: 'radio',    moduleId: 'routes/radio/index',     nav: true, title: 'Radio'     }
     ]);
 
     this.router = router;

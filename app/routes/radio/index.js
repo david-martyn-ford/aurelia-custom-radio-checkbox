@@ -1,6 +1,6 @@
 import {bindable} from 'aurelia-framework';
 
-export class Radio {
+export class RadioIndex {
   constructor() {
     this.radioGroup1 = [];
     
